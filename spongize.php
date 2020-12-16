@@ -29,10 +29,10 @@
 
             // Uppercase for odd number, lowercase for even number
             if ($i%2 === 1) {
-                $data=$data.strtoupper($string_list[$i]);
+                $data = $data.strtoupper($string_list[$i]);
             }
             else {
-                $data=$data.strtolower($string_list[$i]);
+                $data = $data.strtolower($string_list[$i]);
             }
         }
 
