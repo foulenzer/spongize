@@ -25,10 +25,13 @@
         $string_list = str_split($string);
 
         // Iterate over string
-        for( $i = 0; $i < count($string_list); $i++) {
-            if($i%2 === 1){
+        for ($i = 0; $i < count($string_list); $i++) {
+
+            // Uppercase for odd number, lowercase for even number
+            if ($i%2 === 1) {
                 $data=$data.strtoupper($string_list[$i]);
-            }else{
+            }
+            else {
                 $data=$data.strtolower($string_list[$i]);
             }
         }
