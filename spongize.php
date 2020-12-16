@@ -18,8 +18,13 @@
             return FALSE;
         }
 
-        $string_list = str_split($string);
+        // Prepare data
         $data = '';
+
+        // Split into array
+        $string_list = str_split($string);
+
+        // Iterate over string
         for( $i = 0; $i < count($string_list); $i++) {
             if($i%2 === 1){
                 $data=$data.strtoupper($string_list[$i]);
@@ -28,13 +33,14 @@
             }
         }
 
+        // Send output to command line
         echo "$data".PHP_EOL;
 
     }
 
 
     /**
-     *  MAIN
+     *  Main
      */
 
     spongize($argv[1]);
