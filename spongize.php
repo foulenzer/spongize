@@ -45,5 +45,10 @@
     /**
      *  Main
      */
-
-    spongize($argv[1]);
+?>
+    <form action="spongize.php" method="post">
+        <p>Ihr Text: <input type="text" name="lyoner" /></p>
+        <p><input type="submit" /></p>
+        </form>
+<?php
+    spongize($_POST['lyoner']);
